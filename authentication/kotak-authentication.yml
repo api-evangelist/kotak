@@ -1,0 +1,36 @@
+generated: '2026-07-19'
+method: searched
+source: https://api.kotak.bank.in/mapping/
+docs: https://api.kotak.bank.in/explore
+notes: >-
+  Derived from the Kotak API Platform's own published catalog rather than from an
+  OpenAPI document — Kotak publishes no public specification (specs are released
+  to registered developers after login), so the mechanical
+  derive-authentication.py pass had nothing to read. The catalog does declare
+  authentication as a first-class product category: "Authorization services"
+  contains an "O-auth 2.0" API whose published description is "This API call will
+  provide access token required to invoke various API offerings." Token endpoint
+  URL, grant type, and scope list are not published publicly and are NOT recorded
+  here.
+summary:
+  types:
+  - oauth2
+  oauth2_flows: []
+  flows_documented: false
+schemes:
+- name: OAuth 2.0
+  type: oauth2
+  catalog_code: authorization-services-o-auth
+  catalog_category: authorization-services
+  description: >-
+    This API call will provide access token required to invoke various API
+    offerings.
+  source: https://api.kotak.bank.in/mapping/
+  token_url: null
+  authorization_url: null
+  scopes_published: false
+gaps:
+- OAuth 2.0 grant types / flows are not publicly documented
+- token and authorization endpoint URLs are not publicly documented
+- no scope or permission reference is published outside the gated portal
+- no /.well-known/openid-configuration or /.well-known/oauth-authorization-server
