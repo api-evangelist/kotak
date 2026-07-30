@@ -1,22 +1,87 @@
 aid: kotak
-name: Kotak
-description: 'Kotak is a company surfaced as a portfolio company of norwest-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting
-  the enrichment pipeline.'
+name: Kotak Mahindra Bank
+description: 'Kotak Mahindra Bank Limited is an Indian private-sector bank headquartered
+  in Mumbai, and the first non-banking finance company in India to convert into a
+  full commercial bank. Alongside retail, corporate, and NRI banking it operates the
+  Kotak API Platform (api.kotak.com), an enterprise open-banking developer portal
+  offering a curated stack of corporate banking APIs across six product categories
+  — Account Services (balance enquiry, account statement), Payment Services (24x7
+  NEFT/RTGS/IFT, CMS bulk payments, corporate IMPS remittance, name enquiry, UPI merchant
+  cashback), Collection Services (UPI web collect and autopay, e-collection virtual
+  accounts, NACH physical/e-mandate/Aadhaar e-mandate, BBPS agent and biller integration,
+  direct debit queryback), Trade Finance (import/export letters of credit, standby
+  LCs, bankers guarantees, collections, inward/outward remittance, shipping guarantee,
+  document upload), Onboarding (application, dedupe, offers, OTP), and Authorization
+  Services (OAuth 2.0 access tokens). The platform is aimed at fintechs, ERP providers,
+  and NBFCs through its Connected Banking partner program, and pairs an integrated
+  sandbox testing environment with per-product documentation and downloadable kits
+  that are released after developer registration and login.'
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://api.kotak.bank.in/commonIcons/API_Banking_Kotak_Bank_Logo.png
 url: https://raw.githubusercontent.com/api-evangelist/kotak/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - norwest-venture-partners
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: enriched
+x-tier-reason: live-api-platform
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-- Unknown
-apis: []
+- Banking
+- Financial Services
+- Open Banking
+- Payments
+- Collections
+- Trade Finance
+- Corporate Banking
+- India
+- UPI
+apis:
+- aid: kotak:kotak-api-platform
+  name: Kotak API Platform
+  description: 'The Kotak Mahindra Bank enterprise open-banking API platform. A curated
+    corporate banking API stack of 39 published API products across six categories
+    — Account Services, Payment Services, Collection Services, Trade Finance, Onboarding,
+    and Authorization Services (OAuth 2.0) — with an integrated sandbox testing environment.
+    API specifications, sandbox access, and downloadable integration kits are released
+    to registered developers after login; the product/category catalog itself is public.'
+  humanURL: https://api.kotak.com
+  baseURL: https://api.kotak.bank.in
+  tags:
+  - Banking
+  - Open Banking
+  - Payments
+  - Collections
+  - Trade Finance
+  - Onboarding
+  - OAuth
+  properties:
+  - type: DeveloperPortal
+    url: https://api.kotak.com
+  - type: APIReference
+    url: https://api.kotak.bank.in/explore
+  - type: GettingStarted
+    url: https://api.kotak.bank.in/auth/registration
+  - type: Sandbox
+    url: https://api.kotak.bank.in/faq
+  - type: Support
+    url: https://api.kotak.bank.in/support
+  - type: TermsOfService
+    url: https://api.kotak.bank.in/terms
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +90,50 @@ maintainers:
 common:
 - type: Website
   url: https://kotak.com
+- type: DeveloperPortal
+  url: https://api.kotak.com
+- type: Documentation
+  url: https://www.kotak.bank.in/en/open-banking.html
+- type: APIReference
+  url: https://api.kotak.bank.in/explore
+- type: GettingStarted
+  url: https://api.kotak.bank.in/auth/registration
+- type: SignUp
+  url: https://api.kotak.bank.in/auth/registration
+- type: Login
+  url: https://api.kotak.bank.in/auth/login
+- type: Support
+  url: https://api.kotak.bank.in/support
+- type: HelpCenter
+  url: https://www.kotak.bank.in/en/help-center.html
+- type: FAQ
+  url: https://api.kotak.bank.in/faq
+- type: TermsOfService
+  url: https://api.kotak.bank.in/terms
+- type: PrivacyPolicy
+  url: https://www.kotak.com/en/privacy-policy.html
+- type: Partners
+  url: https://api.kotak.bank.in/connectedbanking
+- type: Sandbox
+  url: sandbox/kotak-sandbox.yml
+- type: Authentication
+  url: authentication/kotak-authentication.yml
+- type: Conventions
+  url: conventions/kotak-conventions.yml
+- type: Conformance
+  url: conformance/kotak-conformance.yml
+- type: Packages
+  url: packages/kotak-packages.yml
+- type: WellKnown
+  url: well-known/kotak-well-known.yml
+- type: APICatalog
+  url: well-known/kotak-api-catalog.json
+- type: DomainSecurity
+  url: security/kotak-domain-security.yml
+- type: LLMsTxt
+  url: llms/kotak-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
