@@ -1,0 +1,62 @@
+generated: '2026-07-19'
+method: searched
+source: https://api.kotak.bank.in/mapping/
+notes: >-
+  Standards conformance asserted from the Kotak API Platform's own published API
+  catalog. Kotak's API products are named directly after Indian national payment
+  and collection schemes, so scheme participation is evidenced by the catalog
+  entries themselves. Kotak publishes no OpenAPI, no compliance/trust page, and
+  no named security certifications on any public surface, so no certification
+  claims are recorded and no Compliance pointer is emitted.
+standards:
+- id: oauth2
+  conforms: true
+  evidence: >-
+    Catalog category "Authorization services" publishes an "O-auth 2.0" API
+    (code authorization-services-o-auth) that issues the access token required to
+    invoke other API offerings.
+- id: upi
+  conforms: true
+  evidence: >-
+    NPCI Unified Payments Interface products in the catalog — Web Collect (UPI),
+    Autopay recurring mandates (UPI), Merchant virtual VPA verify (UPI), Manual
+    refund (UPI), Merchant cashback API (UPI pay).
+- id: nach
+  conforms: true
+  evidence: >-
+    NPCI National Automated Clearing House products in the catalog — NACH
+    Physical mandate, NACH E-mandate, NACH Aadhaar E-mandate.
+- id: bbps
+  conforms: true
+  evidence: >-
+    NPCI Bharat Bill Payment System products in the catalog — BBPS Agent
+    Institution Integration and BBPS Biller Integration.
+- id: imps
+  conforms: true
+  evidence: >-
+    NPCI Immediate Payment Service products in the catalog — Corporate
+    Remittance (IMPS) and CMS Bulk Payments (IMPS).
+- id: neft-rtgs
+  conforms: true
+  evidence: >-
+    RBI NEFT and RTGS rails in the catalog — 24x7 payments (NEFT, RTGS, IFT),
+    CMS Bulk Payments (NEFT, RTGS), NEFT-RTGS credit status API.
+- id: trade-finance-instruments
+  conforms: true
+  evidence: >-
+    Trade Finance category publishes import/export Letters of Credit, Standby
+    Letters of Credit, Bankers Guarantees, Collections, Shipping Guarantee, and
+    inward/outward remittance APIs.
+- id: openapi
+  conforms: false
+  evidence: no OpenAPI or Swagger description is published on any public surface
+- id: rfc9457-problem-details
+  conforms: unknown
+  evidence: error format is not published outside the gated portal
+- id: openid-connect
+  conforms: unknown
+  evidence: >-
+    no /.well-known/openid-configuration; OAuth 2.0 is documented but OIDC is not
+    claimed
+certifications_published: []
+compliance_page: null

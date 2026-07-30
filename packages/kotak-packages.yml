@@ -1,0 +1,25 @@
+generated: '2026-07-19'
+method: searched
+source: npm registry search, PyPI, and the Kotak API Platform portal
+result: none
+notes: >-
+  No first-party Kotak Mahindra Bank client library was found on any public
+  package registry. The npm search for "kotak" returns almost entirely unrelated
+  packages (kotak is the Indonesian word for "box"), plus community packages for
+  Kotak Securities' separate Neo trading API — none published by Kotak Mahindra
+  Bank. The Kotak API Platform FAQ states that "downloadable kits" are made
+  available on the product tile under the API catalogue AFTER developer
+  registration and login, so any integration kits Kotak ships are distributed
+  through the gated portal rather than a public registry.
+registries_searched:
+- registry: npm
+  query: kotak
+  first_party_hits: 0
+- registry: pypi
+  query: kotak
+  first_party_hits: 0
+packages: []
+gated_distribution:
+  url: https://api.kotak.bank.in/explore
+  access: registration and login required
+  form: per-product downloadable integration kits and API specifications

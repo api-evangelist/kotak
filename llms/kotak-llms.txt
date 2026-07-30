@@ -1,0 +1,110 @@
+# Kotak Mahindra Bank — Kotak API Platform
+
+> Kotak Mahindra Bank Limited is an Indian private-sector bank headquartered in Mumbai. It operates the Kotak API Platform (https://api.kotak.com), an enterprise open-banking developer portal offering a curated corporate banking API stack of 39 API products across six categories, aimed at fintechs, ERP providers, and NBFCs through its Connected Banking partner program. API specifications, the integrated sandbox, and downloadable integration kits are released to developers after registration and login; the product catalog itself is public.
+
+## Portal
+
+- [Kotak API Platform (developer portal)](https://api.kotak.com)
+- [API Catalog](https://api.kotak.bank.in/explore)
+- [Connected Banking partner program](https://api.kotak.bank.in/connectedbanking)
+- [Developer registration](https://api.kotak.bank.in/auth/registration)
+- [Developer login](https://api.kotak.bank.in/auth/login)
+- [FAQ](https://api.kotak.bank.in/faq)
+- [Support desk](https://api.kotak.bank.in/support)
+- [API Terms of Use](https://api.kotak.bank.in/terms)
+- [Open Banking overview](https://www.kotak.bank.in/en/open-banking.html)
+- [Machine-readable API catalog (JSON)](https://api.kotak.bank.in/mapping/)
+
+## API products
+
+### Account Services
+
+Get real-time access to account balances and inward & outward transactions. These APIs can be used for your day-to-day business monitoring and reconciliation.
+
+- [Account Services category](https://api.kotak.bank.in/explore/account-services)
+- Account Statement: Account statement API fetches transaction status and details along with balances in the account.
+- Balance Enquiry: This API fetches general information of the account, the various balance types and its corresponding values.
+
+### Authorization services
+
+Additional security features for your API applications.
+
+- [Authorization services category](https://api.kotak.bank.in/explore/authorization-services)
+- O-auth 2.0: This API call will provide access token required to invoke various API offerings.
+
+### Collection Services
+
+Initiating push/pull transactions and recurring mandates, on behalf of corporates, and posting response for efficient reconciliation and reporting - across bouquet of collection products.
+
+- [Collection Services category](https://api.kotak.bank.in/explore/collection-services)
+- BBPS (Agent Institution Integration): The purpose of this API is to establish web API based integration between Bank BBPS platform with Agent Institutions.
+- E-collection (Virtual account): This API suit helps customers in easy reconciliation of their collections through virtual accounts.
+- NACH (Aadhar E-mandate): This API enables Corporates to use their interface or application to create Aadhar based e-mandate.
+- NACH (E-mandate): This API enables Corporates to use their interface or application to create an E-NACH mandate.
+- NACH (Physical mandate): This API enables Corporates to use their interface or application to create a physical NACH mandate.
+- Queryback_APIM (Direct debit): Direct debit feature enables merchants to pull funds directly from customer’s account.
+- Autopay - recurring mandates (UPI): UPI Auto Pay facility is for recurring mandate payments such as mobile bills, electricity bills, EMI payments, OTT subscriptions, insurance, mutual funds and loan payments. Kotak
+- Merchant virtual VPA verify (UPI): This API will enable aggregator or merchant to check whether the VPA is valid and registered at NPCI.
+- Manual refund (UPI): Enable merchants to refund amount to the customers for transactions done within last 60 days and process the refund transactions to NPCI.
+- Web Collect (UPI): Initiate a collect request from the merchant website to the customer in the form of UPI collect notification/ request in the respective UPI app.
+- BBPS (Biller Integration): Offers bill payment services to consumers across geographies through network of agents/ retail shops /bank branches and digital channels like Internet banking of banks, Mobile app of banks etc. allowing multiple payment modes like Card, UPI, AEPS, Wallet, Cash and provides instant confirmation.
+
+### Onboarding
+
+This Catalogue of APIs provide the capability to onboard the a user on different products like Personal Loan, Credit Cards etc, in this catalogue we have divided the sections for common and product specific APIs like serviceability and Credit Card Approval API.
+
+- [Onboarding category](https://api.kotak.bank.in/explore/onboarding)
+- Application: Application Services will provide the applications to create the applications for PL and Credit Card Onboarding.
+- Dedupe: Dedupe Services to provide the API for deduping the user applications for any product onboardings.
+- Offers: Offer services are to provide the BRE based offers.
+- OTP: OTP services for proving the generate and capture the OTPs.
+
+### Payment Services
+
+Initiate CMS payment transactions directly through your systems or ERPs and get the same posted in real-time without login to multiple systems
+
+- [Payment Services category](https://api.kotak.bank.in/explore/payments-services)
+- 24x7 payments (NEFT,RTGS,IFT): This API enables corporates to make Payments through RTGS, NEFT and Internal Fund Transfer (IFT) 24 *7 including holidays from the ERP system.
+- CMS Bulk Payments (NEFT, RTGS, IFT, IMPS): This API can initiate multiple payments in a single request from customer's ERP and pushes the transaction in net banking for authorization.
+- Name Enquiry (Pennyless): This is a non-financial API i.e. Name Enquiry feature allows remitter to validate the beneficiary details of IMPS transaction before initiating a financial transaction.
+- Corporate Remittance (IMPS): The Corporates using payments service will be able to make Corporate to Account Payments on real time using IMPS Rails under the P2P or P2A mode.
+- Merchant cashback API (UPI pay): This API allows customer to instantly transfer money to other parties' bank accounts through UPI ID without displaying their account number.
+- NEFT- RTGS credit status API: This API provides visibility towards the NEFT-RTGS outward payments transaction providing stage wise response for payment assurance.
+
+### Trade Finance
+
+The speed your business deserves.  Digitizing trade flows with intelligent APIs. Simplifying trade finance, securely.
+
+- [Trade Finance category](https://api.kotak.bank.in/explore/trade-finance)
+- Documents Upload: Enables secure document upload through APIs.
+- Export Bankers Guarantee: Integrate Export Bank Guarantee journey for seamless lifecycle experience with quick response APIs.
+- Export Collection: Effortless exports with the efficient APIs. Create and discount collections with precision in every payment.
+- Export Letter of Credit: Passport to seamless export letter of credit lifecycle via APIs with real-time visibility.
+- Export Standby Letter of Credit: Unlock the new possibilities of issuance, presentations and responses for Export Standby Letter of Credit through APIs.
+- Finance Standalone: Unlock the ease of Financing requests. Entire lifecycle of Preshipment and Postshipment loans through APIs.
+- Import Bankers Guarantee: Get Bank Guarantees advised with the intuitive integration through APIs.
+- Import Collection: Take control of your Import collections with the data you can trust, instantly accessible via smart and secure APIs.
+- Import Export Collection: Take control of your Import collections with the data you can trust, instantly accessible via smart and secure APIs.
+- Import Letter of Credit: Digitize your LC journey - from issuance to settlement, all through APIs.
+- Import Standby Letter of Credit: Accelerate your Import Standby Letter of Credit journey through APIs.
+- Inward Remittance: Disposal instructions simplified with direct API connectivity for Inward Remittances.
+- Miscellaneous: Product Enquiry, Document Attachment, List, Queue
+- Outward Remittance: APIs that simplify outward remittance for global trade payments.
+- Shipping Guarantee: Logistic efficiency for your shipping guarantees issuance via APIs.
+
+## Artifacts
+
+- [APIs.json](https://raw.githubusercontent.com/api-evangelist/kotak/refs/heads/main/apis.yml)
+- [Harvested API catalog](https://raw.githubusercontent.com/api-evangelist/kotak/refs/heads/main/well-known/kotak-api-catalog.json)
+- [Authentication profile](https://raw.githubusercontent.com/api-evangelist/kotak/refs/heads/main/authentication/kotak-authentication.yml)
+- [API conventions](https://raw.githubusercontent.com/api-evangelist/kotak/refs/heads/main/conventions/kotak-conventions.yml)
+- [Standards conformance](https://raw.githubusercontent.com/api-evangelist/kotak/refs/heads/main/conformance/kotak-conformance.yml)
+- [Sandbox](https://raw.githubusercontent.com/api-evangelist/kotak/refs/heads/main/sandbox/kotak-sandbox.yml)
+- [Domain security probe](https://raw.githubusercontent.com/api-evangelist/kotak/refs/heads/main/security/kotak-domain-security.yml)
+- [Well-known index](https://raw.githubusercontent.com/api-evangelist/kotak/refs/heads/main/well-known/kotak-well-known.yml)
+
+## Notes
+
+- Kotak publishes no public OpenAPI/Swagger description; specifications are gated behind portal registration and login.
+- Registration requires a corporate email address on the company's own domain; generic domains are rejected.
+- No public error reference, rate-limit documentation, versioning/deprecation policy, idempotency contract, API status page, changelog, CLI, SDKs, or MCP server were found as of 2026-07-19.

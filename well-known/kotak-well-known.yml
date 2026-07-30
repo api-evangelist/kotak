@@ -1,0 +1,58 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of the Kotak API Platform and kotak.bank.in hosts
+notes: >-
+  Kotak publishes no documents at the RFC-standard /.well-known/ paths. The
+  www.kotak.bank.in host answers every /.well-known/ path with HTTP 200 carrying
+  an HTML "404 Page Not Found" body (a soft 404), so those are recorded as
+  effective_status 404. Kotak DOES publish a real machine-readable API catalog,
+  but at a non-standard path (https://api.kotak.bank.in/mapping/) rather than
+  /.well-known/api-catalog. That document is harvested verbatim to
+  kotak-api-catalog.json and is what the APICatalog pointer resolves to.
+hosts:
+- host: https://api.kotak.bank.in
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://www.kotak.bank.in
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    effective_status: 404
+    note: soft 404 — HTML "404 Page Not Found" body
+  - path: /.well-known/openid-configuration
+    status: 200
+    effective_status: 404
+    note: soft 404 — HTML "404 Page Not Found" body
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    effective_status: 404
+    note: soft 404 — HTML "404 Page Not Found" body
+  - path: /.well-known/api-catalog
+    status: 200
+    effective_status: 404
+    note: soft 404 — HTML "404 Page Not Found" body
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    effective_status: 404
+    note: soft 404 — HTML "404 Page Not Found" body
+non_standard_documents:
+- kind: api-catalog
+  path: /mapping/
+  url: https://api.kotak.bank.in/mapping/
+  status: 200
+  content_type: application/json
+  file: kotak-api-catalog.json
+  description: >-
+    Public, unauthenticated JSON catalog of the Kotak API Platform product tree —
+    6 top-level categories and 39 API subcategories, each with code, name,
+    description, and active flag. This is the document the portal's /explore
+    catalog page renders from.

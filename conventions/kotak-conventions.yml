@@ -1,0 +1,68 @@
+generated: '2026-07-19'
+method: searched
+source: https://api.kotak.bank.in/ + https://api.kotak.bank.in/faq + https://api.kotak.bank.in/mapping/
+docs: https://api.kotak.bank.in/explore
+notes: >-
+  Kotak publishes no OpenAPI and no public reference documentation — API
+  specifications are released only to registered, logged-in developers. This
+  conventions doc therefore records ONLY what the public portal surface
+  establishes, and explicitly marks the rest unknown rather than guessing. In
+  particular, idempotency is NOT documented on any public Kotak surface, so no
+  Idempotency pointer is emitted for this provider.
+authentication:
+  style: oauth2-access-token
+  documented: true
+  detail: >-
+    A dedicated "Authorization services" API product issues the access token
+    required to invoke every other API offering.
+  artifact: authentication/kotak-authentication.yml
+  grant_types: unknown
+  token_url: unpublished
+idempotency:
+  supported: unknown
+  documented: false
+  header: null
+  note: >-
+    No idempotency key, retry, or de-duplication contract is published on any
+    public Kotak surface. The Onboarding category does publish a "Dedupe" API,
+    but that is an applicant de-duplication business function, not an HTTP
+    request idempotency contract, and it is not treated as one here.
+pagination:
+  style: unknown
+  documented: false
+versioning:
+  scheme: unknown
+  documented: false
+error_envelope:
+  format: unknown
+  documented: false
+  note: error catalog is not published outside the gated portal
+rate_limiting:
+  documented: false
+  note: >-
+    The portal markets "Customisable limits" as a platform feature, but publishes
+    no limit values, no rate-limit response headers, and no quota documentation
+    publicly.
+request_tracing:
+  header: unknown
+  documented: false
+sandbox:
+  artifact: sandbox/kotak-sandbox.yml
+  integrated: true
+security_transport:
+  https_required: true
+  tls_version_observed: TLSv1.3
+  artifact: security/kotak-domain-security.yml
+catalog:
+  machine_readable: true
+  url: https://api.kotak.bank.in/mapping/
+  artifact: well-known/kotak-api-catalog.json
+  categories: 6
+  api_products: 39
+gaps:
+- no public OpenAPI/Swagger description
+- no public error reference
+- no public rate-limit documentation
+- no public versioning or deprecation policy
+- no public idempotency contract
+- no public API status page

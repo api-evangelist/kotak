@@ -1,0 +1,36 @@
+generated: '2026-07-19'
+method: searched
+source: https://api.kotak.bank.in/faq
+docs: https://api.kotak.bank.in/faq
+available: true
+access: registration-and-login-required
+notes: >-
+  Kotak operates an integrated sandbox as part of the Kotak API Platform. The
+  portal FAQ states plainly: "Can I try the available APIs in a sandbox
+  environment? Yes, there is an integrated sandbox available to test the APIs."
+  The homepage repeats it: "Kotak's integrated Sandbox testing environment
+  provides seamless connectivity to Discover, Engage and Consume APIs instantly."
+  Sandbox access, API specifications, and downloadable kits are all released only
+  after developer registration and login, so NO test credentials, magic test
+  values, test account numbers, test VPAs, or key prefixes are published
+  publicly. None are invented here.
+evidence:
+- source: https://api.kotak.bank.in/faq
+  quote: Yes, there is an integrated sandbox available to test the APIs.
+- source: https://api.kotak.bank.in/
+  quote: >-
+    Kotak's integrated Sandbox testing environment provides seamless connectivity
+    to Discover, Engage and Consume APIs instantly.
+- source: https://api.kotak.bank.in/faq
+  quote: >-
+    API specifications, sandbox testing, downloadable kits are available after
+    logging-in.
+registration:
+  url: https://api.kotak.bank.in/auth/registration
+  requirement: >-
+    Corporate email address on the company's own domain — the FAQ states generic
+    domains (gmail, yahoo, rediff) will not be accepted.
+test_values_published: false
+test_key_prefixes: []
+test_clocks: false
+fixture_tooling: []
