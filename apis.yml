@@ -42,6 +42,17 @@ modified: '2026-07-19'
 tags:
 - Company
 - Banking
+- Financial-Services
+- Open Banking
+- Payments
+- Collection
+- Trade Finance
+- Corporate Banking
+- India
+- UPI
+tags_raw:
+- Company
+- Banking
 - Financial Services
 - Open Banking
 - Payments
@@ -62,6 +73,14 @@ apis:
   humanURL: https://api.kotak.com
   baseURL: https://api.kotak.bank.in
   tags:
+  - Banking
+  - Open Banking
+  - Payments
+  - Collection
+  - Trade Finance
+  - Onboarding
+  - Authentication
+  tags_raw:
   - Banking
   - Open Banking
   - Payments
