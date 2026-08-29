@@ -16,6 +16,17 @@ description: 'Kotak Mahindra Bank Limited is an Indian private-sector bank headq
   and NBFCs through its Connected Banking partner program, and pairs an integrated
   sandbox testing environment with per-product documentation and downloadable kits
   that are released after developer registration and login.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: approval
