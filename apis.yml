@@ -37,6 +37,7 @@ accessModel:
   confidence: medium
   source:
   - authentication
+  - {url: 'https://kotak.com', status: 301, note: 'declared website redirects to https://www.kotak.bank.in/en/home.html — a different registrable domain (kotak.com -> bank.in), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
   generated: '2026-07-22'
   method: derived
 image: https://api.kotak.bank.in/commonIcons/API_Banking_Kotak_Bank_Logo.png
