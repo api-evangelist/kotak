@@ -54,7 +54,7 @@ modified: '2026-07-19'
 tags:
 - Company
 - Banking
-- Financial-Services
+- Financial Services
 - Open Banking
 - Payments
 - Collection
@@ -73,6 +73,7 @@ tags_raw:
 - Corporate Banking
 - India
 - UPI
+- Financial-Services
 apis:
 - aid: kotak:kotak-api-platform
   name: Kotak API Platform
