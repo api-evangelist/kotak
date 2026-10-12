@@ -1,0 +1,18 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/kotak/integrations
+- https://zapier.com/apps/kotak-mahindra-bank/integrations
+- https://n8n.io/integrations/kotak/
+- https://composio.dev/toolkits/kotak
+- https://monid.ai/tools/kotak
+checked:
+- https://composio.dev/toolkits/kotak
+- https://monid.ai/tools/kotak
+- https://n8n.io/integrations/kotak/
+- https://zapier.com/apps/kotak-mahindra-bank/integrations
+- https://zapier.com/apps/kotak/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
