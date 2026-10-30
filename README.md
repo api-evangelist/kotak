@@ -64,40 +64,91 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Kotak Mahindra Bank Limited is an Indian private-sector bank headquartered in Mumbai, and the first non-banking finance company in India to convert into a full commercial bank. Alongside retail, corporate, and NRI banking it operates the **Kotak API Platform** ([api.kotak.com](https://api.kotak.com)), an enterprise open-banking developer portal offering a curated corporate banking API stack.
+Kotak Mahindra Bank Limited is an Indian private-sector bank headquartered in Mumbai, and the first non-banking finance company in India to convert into a full commercial bank. Alongside retail, corporate, and NRI banking it operates the Kotak API Platform (api.kotak.com), an enterprise open-banking developer portal offering a curated stack of corporate banking APIs across six product categories — Account Services (balance enquiry, account statement), Payment Services (24x7 NEFT/RTGS/IFT, CMS bulk payments, corporate IMPS remittance, name enquiry, UPI merchant cashback), Collection Services (UPI web collect and autopay, e-collection virtual accounts, NACH physical/e-mandate/Aadhaar e-mandate, BBPS agent and biller integration, direct debit queryback), Trade Finance (import/export letters of credit, standby LCs, bankers guarantees, collections, inward/outward remittance, shipping guarantee, document upload), Onboarding (application, dedupe, offers, OTP), and Authorization Services (OAuth 2.0 access tokens). The platform is aimed at fintechs, ERP providers, and NBFCs through its Connected Banking partner program, and pairs an integrated sandbox testing environment with per-product documentation and downloadable kits that are released after developer registration and login.
 
-## API surface
+**Areas:** Company · Banking · Financial Services · Open Banking · Payments · Collection · Trade Finance · Corporate Banking · India · UPI
 
-The platform publishes **39 API products across 6 categories** (harvested from the portal's own public catalog at `https://api.kotak.bank.in/mapping/`):
+## Kotak Mahindra Bank on APIs.io
 
-| Category | Products |
+Everything profiled for Kotak Mahindra Bank is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/kotak/](https://apis.io/providers/kotak/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Kotak API Platform](https://apis.io/apis/kotak/kotak-api-platform/) — The Kotak Mahindra Bank enterprise open-banking API platform. A curated corporate banking API stack of 39 published API products across six categories —…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Kotak Authentication](https://apis.io/security/kotak/kotak-authentication/)
+- [Kotak Domain Security](https://apis.io/security/kotak/kotak-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://kotak.com)
+- [Documentation](https://www.kotak.bank.in/en/open-banking.html)
+- [Getting started](https://api.kotak.bank.in/auth/registration)
+- [API reference](https://api.kotak.bank.in/explore)
+- [Sign up](https://api.kotak.bank.in/auth/registration)
+- [Support](https://api.kotak.bank.in/support)
+- [Terms of service](https://api.kotak.bank.in/terms)
+- [Privacy policy](https://www.kotak.com/en/privacy-policy.html)
+
+## API Evangelist rating
+
+**Kin Score 26.7** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| Account Services | Balance Enquiry, Account Statement |
-| Payment Services | 24x7 payments (NEFT/RTGS/IFT), CMS Bulk Payments, Corporate Remittance (IMPS), Name Enquiry, NEFT-RTGS credit status, Merchant cashback (UPI pay) |
-| Collection Services | UPI Web Collect, UPI Autopay, UPI manual refund, Merchant VPA verify, E-collection virtual accounts, NACH physical/e-mandate/Aadhaar e-mandate, BBPS agent + biller integration, direct debit queryback |
-| Trade Finance | Import/export Letters of Credit, Standby LCs, Bankers Guarantees, Collections, Inward/Outward Remittance, Shipping Guarantee, Documents Upload, Finance Standalone, Miscellaneous |
-| Onboarding | Application, Dedupe, Offers, OTP |
-| Authorization Services | OAuth 2.0 access token |
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 52.4 |
+| Access clarity | 34.2 |
 
-Access is aimed at fintechs, ERP providers, and NBFCs via the **Connected Banking** partner program.
+**Agent readiness 2.5** — human-only
 
-## What is public vs gated
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-- **Public:** the product catalog (including a machine-readable JSON catalog), category descriptions, FAQ, support desk, and API Terms of Use.
-- **Gated (registration + corporate-domain email + login):** API specifications, the integrated sandbox testing environment, and per-product downloadable integration kits.
+**Regulatory alignment 19.7** — Banking & Open Finance
 
-Kotak publishes **no** public OpenAPI/Swagger description, error reference, rate-limit documentation, versioning or deprecation policy, idempotency contract, API status page, changelog, CLI, SDKs, MCP server, or vulnerability-disclosure program as of 2026-07-19.
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/kotak/](https://apis.io/providers/kotak/).
 
-## Artifacts in this repo
+## How this profile is made
 
-- `well-known/kotak-api-catalog.json` — the harvested machine-readable API catalog
-- `well-known/kotak-well-known.yml` — `/.well-known/` probe index
-- `authentication/kotak-authentication.yml` — OAuth 2.0 profile
-- `conventions/kotak-conventions.yml` — cross-cutting semantics (and the documented gaps)
-- `conformance/kotak-conformance.yml` — UPI / NACH / BBPS / IMPS / NEFT-RTGS scheme conformance
-- `sandbox/kotak-sandbox.yml` — integrated sandbox posture
-- `packages/kotak-packages.yml` — registry sweep (no first-party SDKs found)
-- `security/kotak-domain-security.yml` — TLS/HSTS/DNSSEC/CAA/SPF/DMARC probe
-- `llms/kotak-llms.txt` — agent-facing index
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-Backed by: norwest-venture-partners — https://kotak.com
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Kotak Mahindra Bank: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/kotak/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
